@@ -7,6 +7,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+
 const Main = styled.div`
   display: flex;
   justify-content: center;
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
   height: 64px;
   font-size: 16px;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 `;
 
 const Section = styled.div`

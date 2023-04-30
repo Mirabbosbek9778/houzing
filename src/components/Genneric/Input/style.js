@@ -41,8 +41,19 @@ const Container = styled.input`
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "14px")};
   outline: none;
   border: 1px solid #e6e9ec;
+  padding-left: ${({ icon }) => (icon ? "35px" : "20px")};
   /* ${getType} */
-  
 `;
 
-export { Container };
+const Wrapper = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: ${({ width }) => (width ? `${width}px` : "100%")};
+`;
+const Icon = styled.div`
+  position: absolute;
+  left: 10px;
+`;
+
+export { Container, Wrapper, Icon };

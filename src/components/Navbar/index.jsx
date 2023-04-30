@@ -3,6 +3,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Container, Link, Logo, Main, Section, Wrapper } from "./style";
 import { navbar } from "../../utils/navbar";
 import Button from "../Genneric/Button";
+import Filter from "../Filter";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,15 +16,17 @@ const Home = () => {
             <h2>Houzing</h2>
           </Section>
           <Section>
-            {navbar.map(({ title, path,hidden }, index) => {
-              return !hidden && (
-                <Link
-                  className={({ isActive }) => isActive && "active"}
-                  key={index}
-                  to={path}
-                >
-                  {title}
-                </Link>
+            {navbar.map(({ title, path, hidden }, index) => {
+              return (
+                !hidden && (
+                  <Link
+                    className={({ isActive }) => isActive && "active"}
+                    key={index}
+                    to={path}
+                  >
+                    {title}
+                  </Link>
+                )
               );
             })}
           </Section>
@@ -34,6 +37,7 @@ const Home = () => {
           </Section>
         </Wrapper>
       </Main>
+      <Filter />
       <Outlet />
     </Container>
   );
