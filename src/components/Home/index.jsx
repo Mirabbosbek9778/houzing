@@ -1,12 +1,13 @@
 import React from "react";
-// import { Input } from "../Genneric";
 import { Container } from "./style";
 import Carusel from "../Carusel";
+import HouseCard from "../HouseCard";
 
 const Home = () => {
   return (
     <Container>
       <Carusel />
+      <HouseCard />
     </Container>
   );
 };
