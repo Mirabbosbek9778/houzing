@@ -44,3 +44,6 @@ const HouseCard = ({ url, title, bed, bath, garage, ruler, info }) => {
 };
 
 export default HouseCard;
+
+
+// sdhbfsfnjc
