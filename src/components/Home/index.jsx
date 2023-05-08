@@ -1,13 +1,13 @@
 import React from "react";
+// import { Input } from "../Genneric";
 import { Container } from "./style";
-import { Input, Button } from "../Genneric";
+import Carusel from "../Carusel";
 
 const Home = () => {
   return (
     <Container>
-      <h1>home</h1>
-      <Input width={200} placeholder={"test"} />
-     </Container>
+      <Carusel />
+    </Container>
   );
 };
 
