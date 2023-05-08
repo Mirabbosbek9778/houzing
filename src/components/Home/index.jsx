@@ -1,14 +1,16 @@
 import React from "react";
 import { Container } from "./style";
-import { Input, Button } from "../Genneric";
+import Carusel from "../Carusel";
+import HouseCard from "../HouseCard";
 
 const Home = () => {
   return (
     <Container>
-      <h1>home</h1>
-      <Input width={200} placeholder={"test"} />
-     </Container>
+      <Carusel />
+      <HouseCard />
+    </Container>
   );
 };
 
 export default Home;
+// hbf

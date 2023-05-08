@@ -7,7 +7,7 @@ import RootContext from "./context";
 
 const root = ReactDOM.render(
   <RootContext>
-    <Root />,
+    <Root />
   </RootContext>,
   document.getElementById("root")
 );
